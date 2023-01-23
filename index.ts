@@ -70,6 +70,9 @@ server.addListener('connection', c => {
 server.on('listening', () => {
     logger.info(`Successfully started${config.security.enabled ? " [secure]" : ""} WebSocket proxy on port ${config.bindPort}!`)
 })
+server.on('error', err => {
+    logger.error(`WebSocket server threw an unexpected error! Error: ${err.stack ?? err}`)
+})
 
 process.on('uncaughtException', err => {
     logger.error(`An uncaught exception was caught! Exception: ${err.stack ?? err}`)
