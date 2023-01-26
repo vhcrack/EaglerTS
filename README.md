@@ -1,5 +1,5 @@
 # EaglercraftX (1.8.9) WebSocket Proxy
-New updates soon!
+With included MASK error fix. This only works with pre-release versions of eagler 1.8
 ### Demo: `wss://eaglerx-server.worldeditaxe.repl.co/server` ([EaglerX 1.8.9 client](https://web.arch.lol/mc/1.8.8/) only)
 ![Two EaglerX clients connected to the same server](./assets/demo.png)
 ## What is this?
